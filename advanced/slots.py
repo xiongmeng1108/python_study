@@ -19,14 +19,14 @@ def test():
     #由于name,score,fun1在__slots__中已声明，故下面代码正确
     s.name = 'xm'
     s.score = '100'
-    s.fun1 = types.MethodType(s,fun1,Student)
+    s.fun1 = types.MethodType(fun1,s,Student)
     print s.name, s.score, s.fun1()
     
     #由于age没有包含在__slots__中，故下面代码报错
     try:
-        s.age = 20 
-    expect Error as e:
+        s.age = 20
+    except Exception as e:
         print e
         
-if __name__ = 'main':
+if __name__ == '__main__':
     test()
