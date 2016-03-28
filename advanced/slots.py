@@ -5,9 +5,10 @@
 
 __author__ = 'xiongmeng'
 
+
 class Student(object):
-    #利用__slots__属性来限定Student类实例在动态运行过程中可动态添加的属性和方法
-    __slots__ = ("name","score","fun1")
+    """ #利用__slots__属性来限定Student类实例在动态运行过程中可动态添加的属性和方法 """
+    __slots__ = ("name", "score", "fun1")
     
 
 def test():
