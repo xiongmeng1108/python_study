@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""多线程"""
+"""协程"""
 
 __author__ = 'xiongmeng'
 
